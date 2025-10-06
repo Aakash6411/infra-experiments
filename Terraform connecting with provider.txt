@@ -1,0 +1,21 @@
+# First step while connecting terraform with AWS provider
+
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 6.0"
+    }
+  }
+}
+
+# After the above code run the below command
+
+terraform init
+
+# Configure the AWS Provider with terraform
+
+provider "aws" {
+  version = "~> 6.0"
+  region  = "us-east-1"
+}
