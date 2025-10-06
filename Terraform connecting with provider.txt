@@ -16,6 +16,7 @@ terraform init
 # Configure the AWS Provider with terraform
 
 provider "aws" {
-  version = "~> 6.0"
-  region  = "us-east-1"
+  region     = "us-west-2"
+  access_key = "my-access-key"
+  secret_key = "my-secret-key"
 }
